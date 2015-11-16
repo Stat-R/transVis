@@ -5,3 +5,15 @@ rcpp_hello <- function() {
     .Call('transVis_rcpp_hello', PACKAGE = 'transVis')
 }
 
+iterative_change <- function(df1, df2) {
+    .Call('transVis_iterative_change', PACKAGE = 'transVis', df1, df2)
+}
+
+my_cumsum <- function(vec1) {
+    .Call('transVis_my_cumsum', PACKAGE = 'transVis', vec1)
+}
+
+circle_area <- function(vec1) {
+    .Call('transVis_circle_area', PACKAGE = 'transVis', vec1)
+}
+

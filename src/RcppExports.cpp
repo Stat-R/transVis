@@ -15,3 +15,37 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// iterative_change
+NumericVector iterative_change(NumericVector df1, NumericVector df2);
+RcppExport SEXP transVis_iterative_change(SEXP df1SEXP, SEXP df2SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type df1(df1SEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type df2(df2SEXP);
+    __result = Rcpp::wrap(iterative_change(df1, df2));
+    return __result;
+END_RCPP
+}
+// my_cumsum
+NumericVector my_cumsum(NumericVector vec1);
+RcppExport SEXP transVis_my_cumsum(SEXP vec1SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type vec1(vec1SEXP);
+    __result = Rcpp::wrap(my_cumsum(vec1));
+    return __result;
+END_RCPP
+}
+// circle_area
+NumericVector circle_area(NumericVector vec1);
+RcppExport SEXP transVis_circle_area(SEXP vec1SEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type vec1(vec1SEXP);
+    __result = Rcpp::wrap(circle_area(vec1));
+    return __result;
+END_RCPP
+}
